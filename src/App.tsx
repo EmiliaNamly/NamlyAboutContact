@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import HeroSection from "./components/HeroSection";
 import ContactHero from "./pages/ContactUsPage";
 import Navbar from "./pages/partial/Navbar";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route path="/about-us" element={<HeroSection />} />
+        <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactHero />} />
       </Routes>
     </>

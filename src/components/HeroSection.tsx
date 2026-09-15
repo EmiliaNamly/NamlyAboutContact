@@ -1,7 +1,7 @@
 
 export default function HeroSection() {
     return (
-        <section className="bg-[#F7F4EE] text-[#26302E] py-12">
+        <section className="bg-white text-[#1f2933] py-12">
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
                 <div>
@@ -30,14 +30,14 @@ export default function HeroSection() {
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
 
-                        <div className="p-4 bg-white border border-[#E5DFD5] rounded-xl shadow-sm text-center">
-                            <p className="text-sm font-semibold text-[#26302E]">Lokalt i Sverige</p>
-                            <p className="text-xs text-gray-500">Egen produktion i Skåne</p>
+                        <div className="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm text-center">
+                            <p className="text-sm font-semibold text-slate-800 mb-2">Lokalt i Sverige</p>
+                            <p className="text-xs text-slate-600">Egen produktion i Skåne</p>
                         </div>
 
-                        <div className="p-4 bg-white border border-[#E5DFD5] rounded-xl shadow-sm text-center">
-                            <p className="text-sm font-semibold text-[#26302E]">Personligt skapande</p>
-                            <p className="text-xs text-gray-500">Designa med egen text & motiv</p>
+                        <div className="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm text-center">
+                            <p className="text-sm font-semibold text-slate-800 mb-2">Personligt skapande</p>
+                            <p className="text-xs text-slate-600">Designa med egen text & motiv</p>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export default function HeroSection() {
                         className="rounded-xl shadow-lg w-full h-full object-cover aspect-[4/3]"
                     />
 
-                    <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm flex items-center gap-2">
+                    <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full shadow-sm flex items-center gap-2">
                         <p className="text-xs font-semibold text-[#26302E]">
                             Skandinavisk design & hållbar kvalitet
                         </p>
