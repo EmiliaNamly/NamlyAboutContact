@@ -1,28 +1,43 @@
 
 export default function HeroSection() {
     return (
-        <section className="bg-[#F7F4EE] text-[#26302E] py-16">
-            <div className="max-w-6x1 mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <section className="bg-[#F7F4EE] text-[#26302E] py-12">
+            <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
                 <div>
-                    <span className="inline-flex items-center gap-2 px-3 py-1 bg-[#EAE4D9] text-xs rounded-full">
+                    <span className="inline-block px-3 py-1 bg-[#EAE4D9] text-xs rounded-full">
                         Vår historia & vision
                     </span>
 
-                    <h1 className="mt-5 text-4xl md:text-5xl font-serif leading-tight">
+                    <h1 className="mt-5 text-3xl md:text-5xl font-serif leading-tight">
                         Namly Design - där personlig stil möter vardag och kreativitet
                     </h1>
 
                     <p className="mt-5 text-gray-600 leading-relaxed">
                         Namly Design grundades 2019 av två småbarnsföräldrar med en enkel idé -
                         att göra familjelivet lite enklare, lite roligare och mycket mer personligt.
+                        Det började med behovet av smarta och praktiska lösningar för vardagen,
+                        men växte snabbt till ett företag som idag inspirerar tusentals kunder med
+                        personliga produkter för både hem och livstil.
+                    </p>
+
+                    <p className="mt-4 text-gray-600 leading-relaxed">
+                        Vi erbjuder ett brett sortiment av anpassningsbara produkter som låter dig
+                        uttrycka din unika stil - allt från namnlappar och posters till väggdekor,
+                        tapeter och kakeldekor. Många av våra produkter kan designas med egen text,
+                        färg och bild, så att du enkelt kan skapa något som verkligen känns som du.
                     </p>
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
 
-                        <div className="p-4 bg-white border rounded-md shadow-sm">
-                            <p className="font-bold text-sm">Lokalt i Sverige</p>
+                        <div className="p-4 bg-white border border-[#E5DFD5] rounded-xl shadow-sm text-center">
+                            <p className="text-sm font-semibold text-[#26302E]">Lokalt i Sverige</p>
                             <p className="text-xs text-gray-500">Egen produktion i Skåne</p>
+                        </div>
+
+                        <div className="p-4 bg-white border border-[#E5DFD5] rounded-xl shadow-sm text-center">
+                            <p className="text-sm font-semibold text-[#26302E]">Personligt skapande</p>
+                            <p className="text-xs text-gray-500">Designa med egen text & motiv</p>
                         </div>
                     </div>
                 </div>
