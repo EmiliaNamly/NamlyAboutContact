@@ -42,13 +42,19 @@ export default function HeroSection() {
                     </div>
                 </div>
 
-                <div className="relative">
+                <div className="relative self-stretch">
 
                     <img
                         src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
                         alt="Namly Design"
-                        className="rounded-md shadow-lg w-full object-cover aspect-[4/3]"
+                        className="rounded-xl shadow-lg w-full h-full object-cover aspect-[4/3]"
                     />
+
+                    <div className="absolute bottom-4 left-4 bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm flex items-center gap-2">
+                        <p className="text-xs font-semibold text-[#26302E]">
+                            Skandinavisk design & hållbar kvalitet
+                        </p>
+                    </div>
 
                 </div>
             </div>
