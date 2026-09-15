@@ -5,7 +5,7 @@ export default function HeroSection() {
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
                 <div>
-                    <span className="inline-block px-3 py-1 bg-[#EAE4D9] text-xs rounded-full">
+                    <span className="inline-block px-4 py-2 bg-[#EAE4D9] border border-[#E5DFD5] text-sm rounded-full text-slate-700">
                         Vår historia & vision
                     </span>
 
