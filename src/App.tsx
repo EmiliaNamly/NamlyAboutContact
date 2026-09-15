@@ -1,7 +1,7 @@
 function App() {
   return (
     <div>
-      <h1>About page</h1>
+      <h1>Om oss</h1>
     </div>
   );
 }
