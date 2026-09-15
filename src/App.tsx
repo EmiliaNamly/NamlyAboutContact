@@ -1,7 +1,9 @@
+import HeroSection from "./components/HeroSection";
+
 function App() {
   return (
     <div>
-      <h1>Om oss</h1>
+      <HeroSection />
     </div>
   );
 }
