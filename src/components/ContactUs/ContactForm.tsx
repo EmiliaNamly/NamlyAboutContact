@@ -33,7 +33,7 @@ export default function ContactForm() {
     "w-full rounded-lg border border-[#E4DED2] bg-[#F1ECE3] px-4 py-3 text-[#2A2620] placeholder-[#8A8478] outline-none transition-colors focus:border-[#C17752]";
 
   return (
-    <div className="w-full rounded-2xl border border-[#EAE4D8] bg-white p-10">
+    <div className="mx-4 w-auto rounded-2xl border border-[#EAE4D8] bg-white p-6 sm:mx-0 sm:w-full sm:p-10">
       {/* Eyebrow */}
       <span className="text-xs font-semibold tracking-wide text-[#394150]">
         SKRIV TILL OSS

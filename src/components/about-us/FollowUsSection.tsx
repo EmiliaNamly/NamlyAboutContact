@@ -16,8 +16,7 @@ export default function FollowUsSection() {
     };
 
     return (
-        <section className="bg-white text-[#1f2933] py-6">
-            <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      
 
                 <div className="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 sm:p-8 shadow-sm flex flex-col gap-3">
                     <div className="flex items-center gap-2">
@@ -87,7 +86,6 @@ export default function FollowUsSection() {
                         />
                     </a>
                 </div>
-            </div>
-        </section>
+        
     );
 }

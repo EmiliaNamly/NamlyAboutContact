@@ -1,6 +1,6 @@
 export default function ContactHero() {
   return (
-    <section className="bg-white px-6 py-16">
+    <section className="bg-white px-6 py-10">
       <div className="mx-auto max-w-screen-lg">
         {/* Eyebrow badge */}
         <span className="inline-block px-4 py-2 bg-[#EAE4D9] text-[#2A2620]border border-[#E5DFD5] text-sm rounded-full text-slate-700 mb-6">
@@ -8,10 +8,10 @@ export default function ContactHero() {
         </span>
 
         {/* Heading */}
-        <h1 className="font-serif text-5xl text-[#2A2620]">Kontakta oss</h1>
+        <h1 className="font-serif text-3xl md:text-5xl leading-tight">Kontakta oss</h1>
 
         {/* Description */}
-        <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#5C574E]">
+        <p className="mt-5 leading-relaxed text-gray-600">
           Tveka inte att kontakta oss på Namly Design om du har några frågor
           eller funderingar. Vi strävar alltid efter att ge dig bästa möjliga
           service och hjälpa dig på vägen. Innan du hör av dig, kanske du hittar
