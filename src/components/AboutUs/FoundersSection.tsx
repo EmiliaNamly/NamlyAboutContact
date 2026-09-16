@@ -20,13 +20,13 @@ export default function FoundersSection() {
 
                         <img
                             src="https://images.unsplash.com/photo-1544005313-94ddf0286df2"
-                            alt="Emma"
+                            alt="Emelie Jungevall"
                             className="w-16 h-16 rounded-full object-cover"
                         />
 
                         <div>
                             <h3 className="text-lg font-semibold text-slate-900">
-                                Hennes namn
+                                Emelie Jungevall
                             </h3>
 
                             <p className="text-sm text-slate-600 mb-2">
@@ -45,7 +45,7 @@ export default function FoundersSection() {
 
                         <img
                             src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e"
-                            alt="Johan"
+                            alt="Peter Svendsen"
                             className="w-16 h-16 rounded-full object-cover"
                         />
 

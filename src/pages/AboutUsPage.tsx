@@ -1,9 +1,10 @@
-import FollowUsSection from "../components/about-us/FollowUsSection";
-import FoundersSection from "../components/about-us/FoundersSection";
-import HelpSection from "../components/about-us/HelpSection";
-import HeroSection from "../components/about-us/HeroSection";
-import SortimentSection from "../components/about-us/SortimentSection";
-import ValuesSection from "../components/about-us/ValuesSection";
+import FollowUsSection from "../components/AboutUs/FollowUsSection";
+import FoundersSection from "../components/AboutUs/FoundersSection";
+import HelpSection from "../components/AboutUs/HelpSection";
+import HeroSection from "../components/AboutUs/HeroSection";
+import NewsletterSection from "../components/AboutUs/NewsLetterSection";
+import SortimentSection from "../components/AboutUs/SortimentSection";
+import ValuesSection from "../components/AboutUs/ValuesSection";
 
 export default function AboutUsPage() {
     return (
@@ -19,6 +20,8 @@ export default function AboutUsPage() {
                     <FollowUsSection />
                 </div>
             </section>
+
+            <NewsletterSection />
         </>
     )
 }
