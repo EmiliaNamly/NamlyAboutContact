@@ -1,8 +1,11 @@
 import {
+    FaceSmileIcon,
     PaintBrushIcon,
     PhotoIcon,
     RectangleGroupIcon,
+    RectangleStackIcon,
     Squares2X2Icon,
+    SwatchIcon,
     TagIcon,
 } from "@heroicons/react/24/outline";
 
@@ -18,8 +21,11 @@ const categories: CategoryTitle[] = [
     { id: "namnlappar", label: "Namnlappar", icon: TagIcon, href: "/namnlappar.html" },
     { id: "posters", label: "Posters", icon: PhotoIcon, href: "/posters.html" },
     { id: "vaggdekor", label: "Väggdekor", icon: PaintBrushIcon, href: "/vaggdekor.html" },
+    { id: "kakeldekor", label: "Kakeldekor", icon: Squares2X2Icon, href: "/kakeldekor.html" },
+    { id: "dekorplast", label: "Dekorplast", icon: SwatchIcon, href: "/dekorplast.html" },
     { id: "tapeter", label: "Tapeter", icon: RectangleGroupIcon, href: "/tapeter.html" },
-    { id: "kakeldekor", label: "Kakeldekor", icon: Squares2X2Icon, href: "/kakeldekor.html", fullWidth: true },
+    { id: "klistermarken", label: "Klistermärken", icon: FaceSmileIcon, href: "/klistermarken.html" },
+    { id: "canvastavlor", label: "Canvastavlor", icon: RectangleStackIcon, href: "/canvastavlor.html" },
 ];
 
 export default function SortimentSection() {
@@ -51,13 +57,13 @@ export default function SortimentSection() {
                                 <a
                                     key={category.id}
                                     href={category.href}
-                                    className={`bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center gap-2 ${category.fullWidth ? "col-span-2 md:col-span-1" : ""
+                                    className={`group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20 ${category.fullWidth ? "col-span-2 md:col-span-1" : ""
                                         }`}
                                 >
-                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F]">
+                                    <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
                                         <Icon className="h-4 w-4 text-white" strokeWidth={1.7} />
                                     </div>
-                                    <span className="text-sm font-semibold text-slate-800">
+                                    <span className="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">
                                         {category.label}
                                     </span>
                                 </a>
