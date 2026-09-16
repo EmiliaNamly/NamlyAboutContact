@@ -16,7 +16,7 @@ export default function ContactQuickCards() {
       <div className="mx-auto max-w-screen-xl">
         <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
           {/* Card 1 */}
-          <div className="flex flex-col rounded-2xl border border-[#EAE4D8] bg-white p-6">
+          <div className="flex flex-col rounded-2xl border border-[#E5DFD5] bg-[#EAE4D9] p-6">
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#394150]">
               <EnvelopeIcon className="h-6 w-6 text-white" strokeWidth={1.5} />
             </div>
@@ -33,7 +33,7 @@ export default function ContactQuickCards() {
               vanligtvis inom några timmar!
             </p>
 
-            <div className="mt-5 flex items-center gap-2 rounded-lg bg-[#F1ECE3] px-4 py-3 text-sm text-[#5C574E]">
+            <div className="mt-5 flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm text-[#5C574E]">
               <ClockIcon className="h-4 w-4 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-[10px] text-[#8A8478]">
@@ -52,7 +52,7 @@ export default function ContactQuickCards() {
           </div>
 
           {/* Card 2 */}
-          <div className="flex flex-col rounded-2xl border border-[#EAE4D8] bg-white p-6">
+          <div className="flex flex-col rounded-2xl border border-[#E5DFD5] bg-[#EAE4D9] p-6">
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#394150]">
               <QuestionMarkCircleIcon
                 className="h-6 w-6 text-white"
@@ -68,7 +68,7 @@ export default function ContactQuickCards() {
               samlat svar om tryck, applicering, leveranstider och returer.
             </p>
 
-            <div className="mt-5 flex items-center gap-2 rounded-lg bg-[#F1ECE3] px-4 py-3 text-sm text-[#5C574E]">
+            <div className="mt-5 flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm text-[#5C574E]">
               <CheckBadgeIcon className="h-4 w-4 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-[10px]  text-[#8A8478]">TOPPFRÅGOR</div>
@@ -85,7 +85,7 @@ export default function ContactQuickCards() {
           </div>
 
           {/* Card 3 */}
-          <div className="flex flex-col rounded-2xl border border-[#EAE4D8] bg-white p-6">
+          <div className="flex flex-col rounded-2xl border border-[#E5DFD5] bg-[#EAE4D9] p-6">
             <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#394150]">
               <BuildingOffice2Icon
                 className="h-6 w-6 text-white"
@@ -103,7 +103,7 @@ export default function ContactQuickCards() {
               <p className="mt-2 text-xs text-[#8A8478]">Org.nr: 559216-9097</p>
             </div>
 
-            <div className="mt-5 flex items-center gap-2 rounded-lg bg-[#F1ECE3] px-4 py-3 text-sm text-[#5C574E]">
+            <div className="mt-5 flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm text-[#5C574E]">
               <TruckIcon className="h-4 w-4 shrink-0" strokeWidth={1.5} />
               <div>
                 <div className="text-[10px]  text-[#8A8478]">

@@ -2,8 +2,8 @@ import ContactForm from "../components/ContactUs/ContactForm";
 import ContactHero from "../components/ContactUs/ContactHero";
 import ContactQuickCards from "../components/ContactUs/ContactQuickCards";
 import ContactSidebar from "../components/ContactUs/ContactSidebar";
-import NewsletterBox from "../components/ContactUs/NewsletterBox";
 import FaqAccordion from "../components/ContactUs/FaqAccordion";
+import NewsletterBox from "../components/ContactUs/NewsLetterbox";
 
 export default function ContactUsPage() {
   return (
@@ -14,6 +14,7 @@ export default function ContactUsPage() {
         <ContactQuickCards />
       </div>
 
+      {/* Formulär (vänster) + Sidebar (höger) sida vid sida på desktop */}
       <div className="mx-auto mt-8 grid w-full max-w-screen-xl grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="flex flex-col gap-8">
           <ContactForm />
