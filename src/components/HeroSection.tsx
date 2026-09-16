@@ -1,3 +1,7 @@
+import {
+    BuildingOffice2Icon,
+    FlagIcon,
+} from "@heroicons/react/24/outline";
 
 export default function HeroSection() {
     return (
@@ -6,7 +10,7 @@ export default function HeroSection() {
 
                 <div>
                     <span className="inline-block px-4 py-2 bg-[#EAE4D9] border border-[#E5DFD5] text-sm rounded-full text-slate-700">
-                        Vår historia & vision
+                        Vår historia & Vision
                     </span>
 
                     <h1 className="mt-5 text-3xl md:text-5xl font-serif leading-tight">
@@ -21,23 +25,27 @@ export default function HeroSection() {
                         personliga produkter för både hem och livstil.
                     </p>
 
-                    <p className="mt-4 text-gray-600 leading-relaxed">
-                        Vi erbjuder ett brett sortiment av anpassningsbara produkter som låter dig
-                        uttrycka din unika stil - allt från namnlappar och posters till väggdekor,
-                        tapeter och kakeldekor. Många av våra produkter kan designas med egen text,
-                        färg och bild, så att du enkelt kan skapa något som verkligen känns som du.
-                    </p>
-
                     <div className="grid grid-cols-2 gap-4 mt-8">
 
                         <div className="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm text-center">
-                            <p className="text-sm font-semibold text-slate-800 mb-2">Lokalt i Sverige</p>
-                            <p className="text-xs text-slate-600">Egen produktion i Skåne</p>
+                            <div className="mb-5 flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] mx-auto">
+                                <FlagIcon className="h-4 w-4 text-white"
+                                    strokeWidth={1.7}
+                                />
+                            </div>
+                            <p className="text-sm font-semibold text-slate-800 mb-2">Grundat 2019</p>
+                            <p className="text-xs text-slate-600">Svenskt familjeföretag</p>
                         </div>
 
                         <div className="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm text-center">
-                            <p className="text-sm font-semibold text-slate-800 mb-2">Personligt skapande</p>
-                            <p className="text-xs text-slate-600">Designa med egen text & motiv</p>
+                            <div className="mb-5 flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] mx-auto">
+                                <BuildingOffice2Icon
+                                    className="h-4 w-4 text-white"
+                                    strokeWidth={1.7}
+                                />
+                            </div>
+                            <p className="text-sm font-semibold text-slate-800 mb-2">Lokalt i Sverige</p>
+                            <p className="text-xs text-slate-600">Egen produktion i Skåne</p>
                         </div>
                     </div>
                 </div>
