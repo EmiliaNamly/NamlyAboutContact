@@ -1,12 +1,5 @@
 import {
-    EnvelopeIcon,
-    QuestionMarkCircleIcon,
     BuildingOffice2Icon,
-    ClockIcon,
-    CheckBadgeIcon,
-    TruckIcon,
-    ArrowDownIcon,
-    PaperAirplaneIcon,
     FlagIcon,
 } from "@heroicons/react/24/outline";
 
@@ -30,13 +23,6 @@ export default function HeroSection() {
                         Det började med behovet av smarta och praktiska lösningar för vardagen,
                         men växte snabbt till ett företag som idag inspirerar tusentals kunder med
                         personliga produkter för både hem och livstil.
-                    </p>
-
-                    <p className="mt-4 text-gray-600 leading-relaxed">
-                        Vi erbjuder ett brett sortiment av anpassningsbara produkter som låter dig
-                        uttrycka din unika stil - allt från namnlappar och posters till väggdekor,
-                        tapeter och kakeldekor. Många av våra produkter kan designas med egen text,
-                        färg och bild, så att du enkelt kan skapa något som verkligen känns som du.
                     </p>
 
                     <div className="grid grid-cols-2 gap-4 mt-8">
