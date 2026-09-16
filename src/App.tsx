@@ -1,8 +1,18 @@
+import { Route, Routes } from "react-router-dom";
+import ContactHero from "./pages/ContactUsPage";
+import Navbar from "./pages/partial/Navbar";
+import AboutUsPage from "./pages/AboutUsPage";
+
 function App() {
   return (
-    <div>
-      <h1>About page</h1>
-    </div>
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/about-us" element={<AboutUsPage />} />
+        <Route path="/contact" element={<ContactHero />} />
+      </Routes>
+    </>
   );
 }
 
