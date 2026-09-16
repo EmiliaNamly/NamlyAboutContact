@@ -1,14 +1,8 @@
-import {
-    ChatBubbleOvalLeftEllipsisIcon,
-    CameraIcon,
-    EnvelopeIcon,
-    ArrowDownIcon,
-    EnvelopeOpenIcon,
-    SparklesIcon,
-} from "@heroicons/react/24/outline";
+// components/FollowUsSection.tsx
+import { CameraIcon, ArrowDownIcon, EnvelopeOpenIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { FaFacebook, FaTiktok } from "react-icons/fa";
 
-export default function HelpFollowUsSection() {
+export default function FollowUsSection() {
     const handleNewsletterJump = (e: React.MouseEvent<HTMLAnchorElement>) => {
         e.preventDefault();
         const target = document.getElementById("newsletter");
@@ -24,33 +18,6 @@ export default function HelpFollowUsSection() {
     return (
         <section className="bg-white text-[#1f2933] py-6">
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-
-                <div className="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 sm:p-8 shadow-sm flex flex-col gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0">
-                        <ChatBubbleOvalLeftEllipsisIcon className="h-5 w-5 text-white" strokeWidth={1.7} />
-                    </div>
-
-                    <h3 className="text-xl font-serif leading-tight">
-                        Hur vi kan hjälpa dig
-                    </h3>
-
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                        Vi vet att det kan dyka upp frågor när du handlar personligt
-                        online. Hur ser produkten ut i verkligheten? Passar det i mitt
-                        hem? Vad händer om jag ångrar mig? Vår hemsida är skapad för att
-                        vara enkel och inspirerande – men vi finns också här med personlig
-                        service, tydliga instruktioner och snabb återkoppling. Tveka inte
-                        att höra av dig!
-                    </p>
-
-                    <a
-                        href="mailto:info@namly.se"
-                        className="mt-2 inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-3 px-4 transition-colors hover:bg-[#2E5C8A]"
-                    >
-                        <EnvelopeIcon className="h-4 w-4" strokeWidth={1.7} />
-                        <span>Kontakta oss: info@namly.se</span>
-                    </a>
-                </div>
 
                 <div className="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 sm:p-8 shadow-sm flex flex-col gap-3">
                     <div className="flex items-center gap-2">
@@ -96,12 +63,12 @@ export default function HelpFollowUsSection() {
                             <span className="hidden sm:inline">TikTok</span>
                         </a>
                     </div>
+
                     <a
                         href="#newsletter"
                         onClick={handleNewsletterJump}
                         className="bg-white/60 rounded-lg p-3 mt-2 flex items-center justify-between text-center hover:bg-white transition-colors group cursor-pointer"
                     >
-
                         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1E3A5F]/10 shrink-0">
                             <EnvelopeOpenIcon className="h-4 w-4 text-[#1E3A5F]" strokeWidth={1.7} />
                         </div>
@@ -122,5 +89,5 @@ export default function HelpFollowUsSection() {
                 </div>
             </div>
         </section>
-    )
+    );
 }
