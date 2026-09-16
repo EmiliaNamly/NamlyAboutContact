@@ -12,8 +12,13 @@ export default function AboutUsPage() {
             <FoundersSection />
             <SortimentSection />
             <ValuesSection />
-            <HelpSection />
-            <FollowUsSection />
+
+            <section className="bg-white text-[#1f2933] py-6">
+                <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <HelpSection />
+                    <FollowUsSection />
+                </div>
+            </section>
         </>
     )
 }
