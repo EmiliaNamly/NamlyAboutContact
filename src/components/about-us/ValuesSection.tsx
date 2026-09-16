@@ -1,4 +1,3 @@
-// components/ValuesSection.tsx
 import {
     TruckIcon,
     HeartIcon,
@@ -35,7 +34,7 @@ const values: ValueCard[] = [
 
 export default function ValuesSection() {
     return (
-        <section className="bg-white text-[#1f2933] py-12">
+        <section className="bg-white text-[#1f2933] py-4">
             <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
                 <div className="relative self-stretch order-1">
