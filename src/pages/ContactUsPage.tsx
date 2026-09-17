@@ -1,9 +1,11 @@
+import FollowUsSection from "../components/AboutUs/FollowUsSection";
+import NewsletterSection from "../components/AboutUs/NewsLetterSection";
 import ContactForm from "../components/ContactUs/ContactForm";
 import ContactHero from "../components/ContactUs/ContactHero";
 import ContactQuickCards from "../components/ContactUs/ContactQuickCards";
-import ContactSidebar from "../components/ContactUs/ContactSidebar";
 import FaqAccordion from "../components/ContactUs/FaqAccordion";
-import NewsletterBox from "../components/ContactUs/NewsLetterbox";
+import RatingCard from "../components/ContactUs/Ratingcard";
+import TrustPointsCard from "../components/ContactUs/TrustPointsCard";
 
 export default function ContactUsPage() {
   return (
@@ -14,19 +16,26 @@ export default function ContactUsPage() {
         <ContactQuickCards />
       </div>
 
-      {/* Formulär (vänster) + Sidebar (höger) sida vid sida på desktop */}
       <div className="mx-auto mt-8 grid w-full max-w-screen-xl grid-cols-1 gap-8 lg:grid-cols-2">
         <div className="flex flex-col gap-8">
           <ContactForm />
-          <NewsletterBox />
         </div>
-        <div className="flex h-full flex-col">
-          <ContactSidebar />
+        <div className="flex h-full flex-col gap-6">
+          <TrustPointsCard />
+          <FollowUsSection />
         </div>
+      </div>
+
+      <div className="mt-8">
+        <RatingCard />
       </div>
 
       <div className="mt-16">
         <FaqAccordion />
+      </div>
+
+      <div className="mt-16">
+        <NewsletterSection />
       </div>
     </div>
   );
