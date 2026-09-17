@@ -148,7 +148,7 @@ export default function ContactForm() {
           </p>
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#394150] px-6 py-3 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-black"
+            className="flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#394150] px-10 py-3 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-black"
           >
             SKICKA MEDDELANDE
           </button>
