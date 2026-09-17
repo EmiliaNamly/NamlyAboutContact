@@ -1,435 +1,321 @@
 <!DOCTYPE html>
 <html lang="sv">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Om oss - Namly Design</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Use Namly Font -->
-  <style>
-    body {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    }
-
-    .font-serif {
-      font-family: Georgia, "Times New Roman", serif;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kontakta oss – Namly Design</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+        },
+      },
+    },
+  };
+</script>
+<style>
+  /* fallback for text-[10px]/etc are handled by Tailwind arbitrary values already */
+  body { background:#fff; }
+</style>
 </head>
+<body class="text-[#2A2620]">
 
-<body class="bg-white text-[#1f2933]">
+<div class="flex flex-col px-6 py-16">
 
-  <!-- ============================================================ -->
-  <!-- HERO SECTION -->
-  <!-- ============================================================ -->
-  <section class="bg-white text-[#1f2933] py-12">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+  <!-- ================= ContactHero ================= -->
+  <section class="bg-white px-6 py-10">
+    <div class="mx-auto max-w-screen-lg">
+      <span class="inline-block px-4 py-2 bg-[#EAE4D9] text-[#2A2620] border border-[#E5DFD5] text-sm rounded-full mb-6">
+        Kundservice &amp; Support
+      </span>
 
-      <div>
-        <span class="inline-block px-4 py-2 bg-[#EAE4D9] border border-[#E5DFD5] text-sm rounded-full text-slate-700">
-          Vår historia &amp; Vision
-        </span>
+      <h1 class="font-serif text-3xl md:text-5xl leading-tight">Kontakta oss</h1>
 
-        <h1 class="mt-5 text-3xl md:text-5xl font-serif leading-tight">
-          Namly Design - där personlig stil möter vardag och kreativitet
-        </h1>
+      <p class="mt-5 leading-relaxed text-gray-600">
+        Tveka inte att kontakta oss på Namly Design om du har några frågor
+        eller funderingar. Vi strävar alltid efter att ge dig bästa möjliga
+        service och hjälpa dig på vägen. Innan du hör av dig, kanske du hittar
+        svaret på din fråga i vår FAQ-sektion, där vi samlat de vanligaste
+        frågorna och svaren. Vår personliga kundsupport besvarar dig snabbt
+        och omtänksamt.
+      </p>
 
-        <p class="mt-5 text-gray-600 leading-relaxed">
-          Namly Design grundades 2019 av två småbarnsföräldrar med en enkel idé -
-          att göra familjelivet lite enklare, lite roligare och mycket mer personligt.
-          Det började med behovet av smarta och praktiska lösningar för vardagen,
-          men växte snabbt till ett företag som idag inspirerar tusentals kunder med
-          personliga produkter för både hem och livstil.
-        </p>
-
-        <div class="grid grid-cols-2 gap-4 mt-8">
-
-          <div class="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm text-center">
-            <div class="mb-5 flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] mx-auto">
-              <!-- FlagIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 3v18M3 4.5c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0v10.5c-2 1.5-4 1.5-6 0s-4-1.5-6 0-4 1.5-6 0V4.5Z" />
-              </svg>
-            </div>
-            <p class="text-sm font-semibold text-slate-800 mb-2">Grundat 2019</p>
-            <p class="text-xs text-slate-600">Svenskt familjeföretag</p>
-          </div>
-
-          <div class="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm text-center">
-            <div class="mb-5 flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] mx-auto">
-              <!-- BuildingOffice2Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3 21h18M6 21V6a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v15M9 9h.01M9 12h.01M9 15h.01M14 9h.01M14 12h.01M14 15h.01M17 21v-6a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v6" />
-              </svg>
-            </div>
-            <p class="text-sm font-semibold text-slate-800 mb-2">Lokalt i Sverige</p>
-            <p class="text-xs text-slate-600">Egen produktion i Skåne</p>
-          </div>
-        </div>
+      <div class="mt-6 inline-flex items-center gap-2 rounded-full border border-[#E4DED2] bg-white px-4 py-2 text-sm text-[#5C574E]">
+        <span class="h-2 w-2 rounded-full bg-[#22C55E]"></span>
+        Kundtjänst bemannad:
+        <span class="font-semibold text-[#2A2620]">Mån–Fre 09:00–17:00</span>
       </div>
-
-      <div class="relative self-stretch">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Namly Design"
-          class="rounded-xl shadow-lg w-full h-full object-cover aspect-[4/3]" />
-        <div
-          class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full shadow-sm flex items-center gap-2">
-          <p class="text-xs font-semibold text-[#26302E]">
-            Skandinavisk design &amp; hållbar kvalitet
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ============================================================ -->
-  <!-- FOUNDERS SECTION -->
-  <!-- ============================================================ -->
-  <section class="bg-white py-4">
-    <div class="max-w-6xl mx-auto px-6">
+  <!-- ================= ContactQuickCards ================= -->
+  <div class="mt-16">
+    <section class="px-6">
+      <div class="mx-auto max-w-screen-xl">
+        <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
 
-      <div class="mb-10">
-        <span class="inline-block px-4 py-2 bg-[#EAE4D9] border border-[#E5DFD5] text-sm rounded-full text-slate-700">
-          Grundarna bakom Namly
-        </span>
+          <!-- Card 1: E-post & Chatt -->
+          <div class="flex flex-col rounded-2xl border border-[#E5DFD5] bg-[#EAE4D9] p-6">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#394150]">
+              <!-- Envelope icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+            </div>
 
-        <h2 class="mt-5 text-3xl md:text-4xl font-serif text-slate-900">
-          Människorna bakom varumärket
-        </h2>
+            <h2 class="mt-2 font-serif text-xl text-[#2A2620]">E-post &amp; Chatt</h2>
+            <p class="mt-3 flex-1 text-[14px] leading-relaxed text-[#5C574E]">
+              Skicka ett mejl till oss på
+              <span class="font-semibold text-[#2A2620]">info@namly.se</span>
+              eller starta en livechatt under våra öppettider. Vi svarar
+              vanligtvis inom några timmar!
+            </p>
+
+            <div class="mt-5 flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm text-[#5C574E]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <div>
+                <div class="text-[10px] text-[#8A8478]">SVARSTID &amp; ÖPPETTIDER</div>
+                <div class="text-[13px] font-semibold text-[#2A2620]">Vardagar 09:00 – 17:00</div>
+              </div>
+            </div>
+
+            <button type="button" class="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#C17752] py-3 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-[#B06A47]">
+              STARTA LIVECHATT
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Card 2: FAQ -->
+          <div class="flex flex-col rounded-2xl border border-[#E5DFD5] bg-[#EAE4D9] p-6">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#394150]">
+              <!-- QuestionMarkCircle icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+              </svg>
+            </div>
+
+            <h2 class="mt-2 font-serif text-xl text-[#2A2620]">Vanliga frågor (FAQ)</h2>
+            <p class="mt-3 flex-1 text-[14px] leading-relaxed text-[#5C574E]">
+              Innan du hör av dig, kika gärna i vår samlade kunskapsbank där vi
+              samlat svar om tryck, applicering, leveranstider och returer.
+            </p>
+
+            <div class="mt-5 flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm text-[#5C574E]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3 7.5-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <div>
+                <div class="text-[10px] text-[#8A8478]">TOPPFRÅGOR</div>
+                <div class="text-[13px] font-semibold text-[#2A2620]">9 av 10 hittar svaret här</div>
+              </div>
+            </div>
+
+            <a href="#faq" class="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#394150] py-3 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-black">
+              GÅ TILL VANLIGA FRÅGOR
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Card 3: Kontor & Lager -->
+          <div class="flex flex-col rounded-2xl border border-[#E5DFD5] bg-[#EAE4D9] p-6">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-[#394150]">
+              <!-- BuildingOffice2 icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h9.75a.75.75 0 0 1 .75.75V21m-10.5 0V3.75A.75.75 0 0 1 5.25 3H4.5m10.5 0H18a.75.75 0 0 1 .75.75V21M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5M16.5 6.75h.008v.008H16.5V6.75Zm0 3h.008v.008H16.5v-.008Zm0 3h.008v.008H16.5V12.75Z" />
+              </svg>
+            </div>
+
+            <h2 class="mt-2 font-serif text-xl text-[#2A2620]">Kontor &amp; Lager</h2>
+            <div class="mt-3 flex-1 text-[14px] leading-relaxed text-[#5C574E]">
+              <p class="font-semibold text-[#2A2620]">Namly Design AB</p>
+              <p>Terminalgatan 9</p>
+              <p>232 61 Arlöv, Sverige</p>
+              <p class="mt-2 text-xs text-[#8A8478]">Org.nr: 559216-9097</p>
+            </div>
+
+            <div class="mt-5 flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm text-[#5C574E]">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 0h-12" />
+              </svg>
+              <div>
+                <div class="text-[10px] text-[#8A8478]">LAGER &amp; TRYCKERI</div>
+                <div class="text-[13px] font-semibold text-[#2A2620]">Lokal produktion i Skåne</div>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=Terminalgatan+9,+232+61+Arlöv" target="_blank" rel="noopener noreferrer" class="mt-4 flex items-center justify-center gap-2 rounded-lg bg-[#394150] py-3 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-black">
+              HITTA VIA KARTA
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.126A59.768 59.768 0 0 1 21.485 12 59.77 59.77 0 0 1 3.27 20.876L5.999 12Zm0 0h7.5" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
       </div>
+    </section>
+  </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <!-- ================= Formulär + TrustPoints + FollowUs ================= -->
+  <div class="mx-auto mt-8 grid w-full max-w-screen-xl grid-cols-1 gap-8 lg:grid-cols-2">
 
-        <div class="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 flex gap-4 shadow-sm">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Emelie Jungevall"
-            class="w-16 h-16 rounded-full object-cover" />
+    <!-- Vänster kolumn: ContactForm -->
+    <div class="flex flex-col gap-8">
+      <div class="mx-4 w-auto rounded-2xl border border-[#EAE4D8] bg-white p-6 sm:mx-0 sm:w-full sm:p-10">
+        <span class="text-xs font-semibold tracking-wide text-[#394150]">SKRIV TILL OSS</span>
+
+        <h2 class="mt-2 font-serif text-4xl text-[#2A2620]">Skicka ett meddelande</h2>
+
+        <p class="mt-3 text-[15px] text-[#5C574E]">
+          Fyll i formuläret nedan så återkommer vi inom 24 timmar under
+          vardagar.
+        </p>
+
+        <form id="contact-form" class="mt-8 flex flex-col gap-5">
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div>
+              <label class="mb-1.5 block text-sm font-medium text-[#2A2620]">Ditt namn *</label>
+              <input
+                name="name"
+                type="text"
+                required
+                placeholder="Anna Andersson"
+                class="w-full rounded-lg border border-[#E4DED2] bg-[#F1ECE3] px-4 py-3 text-[#2A2620] placeholder-[#8A8478] outline-none transition-colors focus:border-[#C17752]"
+              />
+            </div>
+            <div>
+              <label class="mb-1.5 block text-sm font-medium text-[#2A2620]">E-postadress *</label>
+              <input
+                name="email"
+                type="email"
+                required
+                placeholder="namn@exempel.se"
+                class="w-full rounded-lg border border-[#E4DED2] bg-[#F1ECE3] px-4 py-3 text-[#2A2620] placeholder-[#8A8478] outline-none transition-colors focus:border-[#C17752]"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+            <div>
+              <label class="mb-1.5 block text-sm font-medium text-[#2A2620]">
+                Ordernummer <span class="font-normal text-[#8A8478]">(Frivilligt)</span>
+              </label>
+              <input
+                name="orderNumber"
+                type="text"
+                placeholder="T.ex. NAM-8921"
+                class="w-full rounded-lg border border-[#E4DED2] bg-[#F1ECE3] px-4 py-3 text-[#2A2620] placeholder-[#8A8478] outline-none transition-colors focus:border-[#C17752]"
+              />
+            </div>
+            <div>
+              <label class="mb-1.5 block text-sm font-medium text-[#2A2620]">Ämne *</label>
+              <select
+                name="subject"
+                required
+                class="w-full appearance-none rounded-lg border border-[#E4DED2] bg-[#F1ECE3] px-4 py-3 text-[#2A2620] outline-none transition-colors focus:border-[#C17752]"
+              >
+                <option value="" disabled selected>Välj vad ditt ärende gäller</option>
+                <option value="bestallning">Beställning</option>
+                <option value="retur">Retur &amp; byte</option>
+                <option value="produkt">Produktfråga</option>
+                <option value="ovrigt">Övrigt</option>
+              </select>
+            </div>
+          </div>
+
           <div>
-            <h3 class="text-lg font-semibold text-slate-900">Emelie Jungevall</h3>
-            <p class="text-sm text-slate-600 mb-2">Grundare &amp; hennes roll</p>
-            <p class="text-sm text-slate-600 mb-2">Hennes ansvar</p>
+            <label class="mb-1.5 block text-sm font-medium text-[#2A2620]">Ditt meddelande *</label>
+            <textarea
+              name="message"
+              required
+              rows="6"
+              placeholder="Berätta hur vi kan hjälpa dig på bästa sätt..."
+              class="w-full resize-none rounded-lg border border-[#E4DED2] bg-[#F1ECE3] px-4 py-3 text-[#2A2620] placeholder-[#8A8478] outline-none transition-colors focus:border-[#C17752]"
+            ></textarea>
           </div>
-        </div>
 
-        <div class="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 flex gap-4 shadow-sm">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" alt="Peter Svendsen"
-            class="w-16 h-16 rounded-full object-cover" />
+          <div class="mt-2 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+            <p class="text-[13px] text-[#8A8478]">
+              Vi behandlar dina personuppgifter varsamt enligt vår
+              <a href="#" class="underline">integritetspolicy</a>.
+            </p>
+            <button
+              type="submit"
+              class="flex items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#394150] px-10 py-3 text-sm font-semibold tracking-wide text-white transition-colors hover:bg-black"
+            >
+              SKICKA MEDDELANDE
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Höger kolumn: TrustPoints + FollowUs -->
+    <div class="flex h-full flex-col gap-6">
+
+      <!-- TrustPointsCard -->
+      <div class="rounded-2xl border border-[#EAE4D8] bg-white p-6">
+        <div class="flex gap-4 border-b border-[#EAE4D8] pb-5 mb-5">
+          <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#F1ECE3]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-[#394150]" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5H12.75V6Z" clip-rule="evenodd" />
+            </svg>
+          </div>
           <div>
-            <h3 class="text-lg font-semibold text-slate-900">Peter Svendsen</h3>
-            <p class="text-sm text-slate-600 mb-2">Grundare &amp; hans roll</p>
-            <p class="text-sm text-slate-700 leading-relaxed">Hans ansvar</p>
+            <h3 class="font-semibold text-[#2A2620]">Snabb återkoppling</h3>
+            <p class="mt-1 text-sm leading-relaxed text-[#5C574E]">
+              Vi svarar alltid inom 24 timmar under helgfria vardagar så att du slipper vänta.
+            </p>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- SORTIMENT SECTION -->
-  <!-- ============================================================ -->
-  <section class="bg-white text-[#1f2933] py-12">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-8 shadow-sm">
-
-        <span class="inline-block px-4 py-2 mb-6 bg-white border border-[#E5DFD5] text-sm rounded-full text-slate-700">
-          Sortiment
-        </span>
-
-        <h2 class="text-2xl md:text-3xl font-serif leading-tight mb-2">
-          Vårt sortiment
-        </h2>
-
-        <p class="text-gray-600 leading-relaxed mb-6 max-w-2xl">
-          Vi erbjuder ett brett sortiment av anpassningsbara produkter som låter
-          dig uttrycka din unika stil – allt från namnlappar och posters till
-          väggdekor, tapeter och kakeldekor. Många av våra produkter kan designas
-          med egen text, färg och bild, så att du enkelt kan skapa något som
-          verkligen känns som du.
-        </p>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-
-          <a href="/namnlappar.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- TagIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581a2.25 2.25 0 0 0 3.182 0l4.318-4.318a2.25 2.25 0 0 0 0-3.182l-9.581-9.581A2.25 2.25 0 0 0 9.568 3Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Namnlappar</span>
-          </a>
-
-          <a href="/posters.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- PhotoIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M2.25 15.75l5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909M3 4.5h18A1.5 1.5 0 0 1 22.5 6v12a1.5 1.5 0 0 1-1.5 1.5H3A1.5 1.5 0 0 1 1.5 18V6A1.5 1.5 0 0 1 3 4.5Z" />
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25h.008v.008H15V8.25Z" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Posters</span>
-          </a>
-
-          <a href="/vaggdekor.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- PaintBrushIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Väggdekor</span>
-          </a>
-
-          <a href="/kakeldekor.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- Squares2X2Icon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Kakeldekor</span>
-          </a>
-
-          <a href="/dekorplast.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- SwatchIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197 16.5 2.197a1.125 1.125 0 0 1 1.591 0l3.712 3.712a1.125 1.125 0 0 1 0 1.591l-6 6" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Dekorplast</span>
-          </a>
-
-          <a href="/tapeter.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- RectangleGroupIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25Z" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Tapeter</span>
-          </a>
-
-          <a href="/klistermarken.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- FaceSmileIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Klistermärken</span>
-          </a>
-
-          <a href="/canvastavlor.html"
-            class="group bg-white p-4 rounded-lg shadow-sm border border-transparent flex flex-col items-center text-center gap-2 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:border-[#1E3A5F]/20">
-            <div
-              class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0 transition-colors duration-200 group-hover:bg-[#2E5C8A]">
-              <!-- RectangleStackIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
-              </svg>
-            </div>
-            <span
-              class="text-sm font-semibold text-slate-800 transition-colors duration-200 group-hover:text-[#1E3A5F]">Canvastavlor</span>
-          </a>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- VALUES SECTION -->
-  <!-- ============================================================ -->
-  <section class="bg-white text-[#1f2933] py-4">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-
-      <div class="relative self-stretch order-1">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Ateljén och tryckeriet i Skåne"
-          class="rounded-xl shadow-lg w-full h-full object-cover aspect-[4/3]" />
-        <div
-          class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-md px-3 py-1 rounded-full shadow-sm flex items-center gap-2">
-          <p class="text-xs font-semibold text-[#26302E]">
-            Ateljén &amp; Tryckeriet i Skåne
-          </p>
-        </div>
-      </div>
-
-      <div class="order-2">
-        <span
-          class="inline-block px-4 py-2 mb-4 bg-[#EAE4D9] border border-[#E5DFD5] text-sm rounded-full text-slate-700">
-          Våra Värderingar
-        </span>
-
-        <h2 class="text-2xl md:text-3xl font-serif leading-tight mb-4">
-          Vi är ett riktigt företag – med riktiga människor
-        </h2>
-
-        <p class="text-gray-600 leading-relaxed mb-6">
-          Trovärdighet är viktigt för oss. Vi vill att du som kund ska känna
-          att det finns ett genuint team bakom Namly. Vi är ett litet, passionerat
-          gäng som arbetar från Sverige, där vi också tillverkar alla våra
-          produkter lokalt. Har du frågor eller funderingar innan köp, så finns vi
-          alltid här för att hjälpa dig.
-        </p>
-
-        <div class="flex flex-col gap-4">
-
-          <div class="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm flex items-start gap-3">
-            <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0">
-              <!-- TruckIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.25h5.043c.87 0 1.62.65 1.605 1.522A17.85 17.85 0 0 1 21 15.25v3.5m-7.5-11.25v11.25m0-11.25H8.25m5.25 0v3.75m-5.25 7.5h-3v-3.75m0 0V6a2.25 2.25 0 0 1 2.25-2.25h5.25V14.25" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-semibold text-slate-800">Tillverkas lokalt i Sverige</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">Korta transporter, hållbar produktion och noggrann
-                kvalitetskontroll direkt från Skåne.</p>
-            </div>
+        <div class="flex gap-4 border-b border-[#EAE4D8] pb-5 mb-5">
+          <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#F1ECE3]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-[#394150]" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+            </svg>
           </div>
-
-          <div class="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm flex items-start gap-3">
-            <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0">
-              <!-- HeartIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-semibold text-slate-800">Hjärta för välgörenhet</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">Som en del av vårt ansvar som företag stöttar vi lokala
-                välgörenhetsorganisationer och initiativ.</p>
-            </div>
+          <div>
+            <h3 class="font-semibold text-[#2A2620]">Trygghet &amp; Garanti</h3>
+            <p class="mt-1 text-sm leading-relaxed text-[#5C574E]">
+              Svensk tillverkning med noggrant testade, slitstarka och giftfria material anpassade för barnfamiljer.
+            </p>
           </div>
-
-          <div class="p-4 bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl shadow-sm flex items-start gap-3">
-            <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0">
-              <!-- ChatBubbleLeftRightIcon -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-                class="h-4 w-4">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
-              </svg>
-            </div>
-            <div>
-              <h3 class="text-base font-semibold text-slate-800">Personligt engagemang</h3>
-              <p class="text-sm text-slate-600 leading-relaxed">Alltid personligt och genuint bemötande vid varje
-                förfrågan och specialönskemål.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================ -->
-  <!-- HELP + FOLLOW US SECTION -->
-  <!-- ============================================================ -->
-  <section class="bg-white text-[#1f2933] py-6">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-
-      <!-- HelpSection -->
-      <div class="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 sm:p-8 shadow-sm flex flex-col gap-3">
-        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1E3A5F] shrink-0">
-          <!-- ChatBubbleOvalLeftEllipsisIcon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-            class="h-5 w-5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
-          </svg>
         </div>
 
-        <h3 class="text-xl font-serif leading-tight">
-          Hur vi kan hjälpa dig
-        </h3>
-
-        <p class="text-sm text-gray-600 leading-relaxed">
-          Vi vet att det kan dyka upp frågor när du handlar personligt
-          online. Hur ser produkten ut i verkligheten? Passar det i mitt
-          hem? Vad händer om jag ångrar mig? Vår hemsida är skapad för att
-          vara enkel och inspirerande – men vi finns också här med personlig
-          service, tydliga instruktioner och snabb återkoppling. Tveka inte
-          att höra av dig!
-        </p>
-
-        <a href="mailto:info@namly.se"
-          class="mt-2 inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-3 px-4 transition-colors hover:bg-[#2E5C8A]">
-          <!-- EnvelopeIcon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-            class="h-4 w-4">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.01 1.877l-7.5 5.25a2.25 2.25 0 0 1-2.48 0l-7.5-5.25A2.25 2.25 0 0 1 2.25 6.993V6.75" />
-          </svg>
-          <span>Kontakta oss: info@namly.se</span>
-        </a>
+        <div class="flex gap-4">
+          <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#F1ECE3]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4.5 w-4.5 text-[#394150]" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v14.25c0 1.035.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875V4.875C22.5 3.839 21.66 3 20.625 3H3.375ZM12 9.75a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V10.5a.75.75 0 0 0-.75-.75H12Zm-2.625.75a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75V10.5Zm5.25 0a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75V10.5ZM6 14.25a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75v-.008Zm3.375-.75a.75.75 0 0 0-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75h-.008Zm2.625.75a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75h-.008a.75.75 0 0 1-.75-.75v-.008Zm3.375-.75a.75.75 0 0 0-.75.75v.008c0 .414.335.75.75.75h.007a.75.75 0 0 0 .75-.75v-.008a.75.75 0 0 0-.75-.75h-.007Z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-[#2A2620]">Tillverkas i Sverige</h3>
+            <p class="mt-1 text-sm leading-relaxed text-[#5C574E]">
+              Varje order trycks med omsorg i vår produktionsanläggning i Arlöv och skickas spårbart.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- FollowUsSection -->
       <div class="bg-[#EAE4D9] border border-[#E5DFD5] rounded-xl p-6 sm:p-8 shadow-sm flex flex-col gap-3">
         <div class="flex items-center gap-2">
-          <!-- SparklesIcon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#1E3A5F"
-            class="h-5 w-5">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#1E3A5F]" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />
           </svg>
         </div>
 
-        <h3 class="text-xl font-serif leading-tight">
-          Följ vår resa
-        </h3>
+        <h3 class="text-xl font-serif leading-tight">Följ vår resa</h3>
 
         <p class="text-sm text-gray-600 leading-relaxed">
           Vi delar gärna med oss av inspiration, kundbilder och nyheter
@@ -439,165 +325,331 @@
 
         <div class="grid grid-cols-3 gap-3 mt-2">
           <a href="https://www.instagram.com/namly_design/" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-2.5 px-3 transition-colors hover:bg-[#2E5C8A]">
-            <!-- CameraIcon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-              class="h-4 w-4">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+             class="inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-2.5 px-3 transition-colors hover:bg-[#2E5C8A]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-3.632 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
             </svg>
             <span class="hidden sm:inline">Instagram</span>
           </a>
-
           <a href="https://www.facebook.com/Namly-Design-2315890788640287/" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-2.5 px-3 transition-colors hover:bg-[#2E5C8A]">
-            <!-- Facebook icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="white" class="h-4 w-4">
-              <path
-                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+             class="inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-2.5 px-3 transition-colors hover:bg-[#2E5C8A]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 320 512" fill="currentColor">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
             </svg>
             <span class="hidden sm:inline">Facebook</span>
           </a>
-
           <a href="https://www.tiktok.com/@namlydesign" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-2.5 px-3 transition-colors hover:bg-[#2E5C8A]">
-            <!-- TikTok icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" class="h-4 w-4">
-              <path
-                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+             class="inline-flex items-center justify-center gap-2 bg-[#1E3A5F] text-white text-sm font-semibold rounded-lg py-2.5 px-3 transition-colors hover:bg-[#2E5C8A]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512" fill="currentColor">
+              <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
             </svg>
             <span class="hidden sm:inline">TikTok</span>
           </a>
         </div>
 
-        <a href="#newsletter"
-          class="js-newsletter-jump bg-white/60 rounded-lg p-3 mt-2 flex items-center justify-between text-center hover:bg-white transition-colors group cursor-pointer">
+        <a href="#newsletter" id="newsletter-jump"
+           class="bg-white/60 rounded-lg p-3 mt-2 flex items-center justify-between text-center hover:bg-white transition-colors group cursor-pointer">
           <div class="flex h-9 w-9 items-center justify-center rounded-full bg-[#1E3A5F]/10 shrink-0">
-            <!-- EnvelopeOpenIcon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="#1E3A5F"
-              class="h-4 w-4">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.981V19.5Z" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#1E3A5F]" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
             </svg>
           </div>
 
           <div class="text-left">
-            <p class="text-sm font-bold text-slate-800">
-              Vill du ha inspiration i inkorgen?
-            </p>
-            <p class="text-sm text-slate-600">
-              Prenumerera på vårt nyhetsbrev här nedan.
-            </p>
+            <p class="text-sm font-bold text-slate-800">Vill du ha inspiration i inkorgen?</p>
+            <p class="text-sm text-slate-600">Prenumerera på vårt nyhetsbrev här nedan.</p>
           </div>
-          <!-- ArrowDownIcon -->
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#1E3A5F"
-            class="h-[18px] w-[18px] transition-transform duration-200 group-hover:translate-y-0.5 shrink-0">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="text-[#1E3A5F] h-[18px] w-[18px] transition-transform duration-200 group-hover:translate-y-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
           </svg>
         </a>
       </div>
 
     </div>
-  </section>
+  </div>
 
-  <!-- ============================================================ -->
-  <!-- NEWSLETTER SECTION -->
-  <!-- ============================================================ -->
-  <section id="newsletter" class="bg-[#1E3A5F] text-white py-12">
-    <div class="max-w-xl mx-auto px-6 text-center">
-      <h2 class="text-2xl md:text-3xl font-serif leading-tight mb-2">
-        Namly Design nyhetsbrev
-      </h2>
-      <p class="text-sm text-white/80 mb-6 leading-relaxed">
-        Var först med de senaste nyheterna och ta del av våra exklusiva
-        erbjudanden.
-      </p>
-
-      <form id="newsletter-form" class="flex flex-col sm:flex-row items-center justify-center gap-3">
-        <input id="newsletter-input" type="email" required placeholder="E-postadress"
-          class="w-full sm:flex-1 py-3 px-4 bg-white text-slate-800 placeholder:text-slate-400 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EAE4D9]" />
-        <button id="newsletter-button" type="submit"
-          class="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 bg-[#EAE4D9] text-[#1E3A5F] text-sm font-semibold rounded-lg py-3 px-5 transition-colors hover:bg-white">
-          <span id="newsletter-button-text">Prenumerera</span>
-          <svg id="newsletter-button-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke-width="2" stroke="#1E3A5F" class="h-4 w-4">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-          </svg>
-        </button>
-      </form>
-
-      <div class="flex items-center justify-center gap-3 mt-6">
-        <a href="https://www.instagram.com/namly_design/" target="_blank" rel="noopener noreferrer"
-          aria-label="Instagram"
-          class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="white"
-            class="h-4 w-4">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/Namly-Design-2315890788640287/" target="_blank" rel="noopener noreferrer"
-          aria-label="Facebook"
-          class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" fill="white" class="h-4 w-4">
-            <path
-              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
-          </svg>
-        </a>
-        <a href="https://www.tiktok.com/@namlydesign" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
-          class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="white" class="h-4 w-4">
-            <path
-              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-          </svg>
-        </a>
-      </div>
+  <!-- ================= RatingCard (referenced but not provided – simple placeholder kept minimal) ================= -->
+  <div class="mt-8">
+    <div class="mx-auto max-w-screen-xl rounded-2xl border border-[#EAE4D8] bg-white p-6 text-center text-sm text-[#5C574E]">
+      ⭐️⭐️⭐️⭐️⭐️ Betygsatt 4.8/5 av våra kunder
     </div>
-  </section>
+  </div>
 
-  <!-- ============================================================ -->
-  <!-- VANILLA JS -->
-  <!-- ============================================================ -->
-  <script>
-    // Newsletter-formulärets submit (ersätter useState + handleSubmit i React)
-    const form = document.getElementById("newsletter-form");
-    const input = document.getElementById("newsletter-input");
-    const buttonText = document.getElementById("newsletter-button-text");
-    const buttonIcon = document.getElementById("newsletter-button-icon");
+  <!-- ================= FaqAccordion ================= -->
+  <div class="mt-16" id="faq">
+    <section class="bg-[#F1ECE3] px-6 py-16">
+      <div class="mx-auto max-w-screen-md">
+        <span class="block text-center text-xs font-semibold tracking-wide text-[#5C574E]">
+          SNABBA SVAR PÅ VANLIGA FUNDERINGAR
+        </span>
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!input.value) return;
+        <h2 class="mt-2 text-center font-serif text-4xl text-black">Vanliga frågor</h2>
 
-      buttonText.textContent = "Tack!";
-      buttonIcon.style.display = "none";
-      input.value = "";
+        <p class="mt-3 text-center text-[15px] text-[#5C574E]">
+          Hittar du inte svaret du söker här? Skicka ett meddelande ovan så
+          hjälper vi dig direkt!
+        </p>
 
-      setTimeout(function () {
-        buttonText.textContent = "Prenumerera";
-        buttonIcon.style.display = "";
-      }, 3500);
-    });
+        <div class="mt-8 flex flex-col gap-3" id="faq-accordion">
 
-    // Scrolla ner till nyhetsbrevet och fokusera fältet (ersätter handleNewsletterJump)
-    document.querySelectorAll(".js-newsletter-jump").forEach(function (link) {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.getElementById("newsletter");
-        if (target) {
-          target.scrollIntoView({ behavior: "smooth" });
-          setTimeout(function () {
-            document.getElementById("newsletter-input")?.focus();
-          }, 500);
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Hur beställer jag?</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Skriv in din text, välj färg, typsnitt, bakgrund, motiv och lägg till din varukorg. Klicka sedan på "Till kassan" och följ några enkla instruktioner för att betala och slutföra din beställning.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Tips för fina etiketter &amp; namnlappar</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">• Välj en färgkombination med stor kontrast/läsbarhet
+• Välj gärna en bakgrundsfärg eller ett mönster som tas upp av en av färgerna i motivet
+• Använd förnamn på rad 1
+• Ange bara ett telefonnummer per rad då det annars blir väldigt smått och svårläst.
+• Om du väljer bort motiv så blir texten större.
+
+Tänk på att den verkliga namnlappen är mindre än den du ser på skärmen! Detta påverkar textens storlek och läsbarheten. Ju färre tecken på raden desto bättre läsbarhet!</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Kan jag avbryta eller ändra min beställning?</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Då din beställning processas automatiskt så snart den registrerats i vårt system går det dessvärre inte att göra några ändringar. Var därför noga med att kontrollera beställningen innan du slutför ditt köp.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Hur lång är leveranstiden?</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">När din beställning är mottagen skickas en orderbekräftelse. Vi skickar vanligtvis din beställning inom 1-2 arbetsdagar och den levereras inom 2–5 arbetsdagar. Du kan se den specifika leveranstiden på produktsidan eller i kassan.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Frakt och leveranssätt</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Vi skickar varorna med PostNord eller DSV. Fri frakt erbjuds på beställningar över det belopp som anges i varukorgen.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Kvalitet &amp; 100% Nöjdhetsgaranti</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Namly Design erbjuder 100 % nöjdhetsgaranti. Om du av någon anledning inte är nöjd med din produkt skulle vi uppskatta om du kontaktar oss på info@namly.se så att vi kan hjälpa dig. Eftersom våra produkter är tillverkade specifikt efter dina önskemål ersätter eller återbetalar vi inte beställningar som är fel på grund av felstavning eller för att du ångrar din beställning. Inte heller där skador uppstått på grund av normal användning. Då det finns en mängd olika stavningsalternativ för namn, så är det omöjligt för oss att avgöra om det är ett misstag eller en annorlunda bokstavering. Det är därför viktigt att du tittar igenom din beställning en extra gång innan du slutför ditt köp.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Produktinformation och skötselråd för namnlappar</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Materialet i våra namnlappar är valt med omsorg och är av högsta kvalitet! Färgerna som används är snälla och tar hänsyn till både miljö och barn. Observera att våra namnlappar skall fästas på plaggets märkes- eller klädvårdsetikett. Gnugga försiktigt fast klistermärket, var extra noga med hörnen. Namnlapparna tål att användas i tvättmaskin, torktumlare och diskmaskin. Låt gärna namnlappen sitta 24 timmar innan du tvättar. Se till att namnlappen sitter ordentligt och inte går att pilla loss innan barnen använder föremålet. Observera att namnlappen på websidan inte är den verkliga storleken. Färgerna kan variera något beroende på dina datorinställningar.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Hur använder jag en rabattkod?</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Har du en rabattkod anger du koden och klickar på "Använd". Alla rabattkoder har ett utgångsdatum och om det datumet har passerat är rabattkoden inte längre giltig.</p>
+            </div>
+          </div>
+
+          <div class="faq-item rounded-xl border border-[#EAE4D8] bg-white">
+            <button type="button" class="faq-toggle flex w-full items-center justify-between gap-4 px-6 py-5 text-left" aria-expanded="false">
+              <span class="font-serif text-[17px] text-[#2A2620]">Fick du inte svar på din fråga? (Kundservice)</span>
+              <span class="faq-icon flex h-6 w-6 shrink-0 items-center justify-center text-[#394150]">
+                <svg class="icon-plus h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                <svg class="icon-minus hidden h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" /></svg>
+              </span>
+            </button>
+            <div class="faq-panel hidden px-6 pb-5">
+              <p class="whitespace-pre-line text-[14px] leading-relaxed text-[#5C574E]">Om du inte har hittat svar på dina frågor här, är du välkommen att kontakta kundservice via e-post: info@namly.se</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ================= NewsletterSection ================= -->
+  <div class="mt-16">
+    <section id="newsletter" class="bg-[#1E3A5F] text-white py-12">
+      <div class="max-w-xl mx-auto px-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-serif leading-tight mb-2">Namly Design nyhetsbrev</h2>
+        <p class="text-sm text-white/80 mb-6 leading-relaxed">
+          Var först med de senaste nyheterna och ta del av våra exklusiva
+          erbjudanden.
+        </p>
+
+        <form id="newsletter-form" class="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <input
+            id="newsletter-input"
+            type="email"
+            required
+            placeholder="E-postadress"
+            class="w-full sm:flex-1 py-3 px-4 bg-white text-slate-800 placeholder:text-slate-400 text-sm rounded-lg focus:outline-none focus:ring-2 focus:ring-[#EAE4D9]"
+          />
+          <button
+            id="newsletter-submit"
+            type="submit"
+            class="w-full sm:w-auto shrink-0 inline-flex items-center justify-center gap-2 bg-[#EAE4D9] text-[#1E3A5F] text-sm font-semibold rounded-lg py-3 px-5 transition-colors hover:bg-white"
+          >
+            <span id="newsletter-btn-text">Prenumerera</span>
+            <svg id="newsletter-arrow" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+          </button>
+        </form>
+
+        <div class="flex items-center justify-center gap-3 mt-6">
+          <a href="https://www.instagram.com/namly_design/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-3.632 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/Namly-Design-2315890788640287/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 320 512" fill="currentColor">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@namlydesign" target="_blank" rel="noopener noreferrer" aria-label="TikTok"
+             class="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 448 512" fill="currentColor">
+              <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+<!-- ================= Vanilla JS: ersätter React state/handlers ================= -->
+<script>
+  // --- FAQ accordion (öppna ett i taget, precis som useState<number|null> gjorde) ---
+  const faqButtons = document.querySelectorAll('.faq-toggle');
+  faqButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const panel = item.querySelector('.faq-panel');
+      const plus = item.querySelector('.icon-plus');
+      const minus = item.querySelector('.icon-minus');
+      const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+      // Stäng alla andra
+      document.querySelectorAll('.faq-item').forEach((other) => {
+        if (other !== item) {
+          other.querySelector('.faq-toggle').setAttribute('aria-expanded', 'false');
+          other.querySelector('.faq-panel').classList.add('hidden');
+          other.querySelector('.icon-plus').classList.remove('hidden');
+          other.querySelector('.icon-minus').classList.add('hidden');
         }
       });
+
+      // Toggla detta
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      panel.classList.toggle('hidden', isOpen);
+      plus.classList.toggle('hidden', !isOpen);
+      minus.classList.toggle('hidden', isOpen);
     });
-  </script>
+  });
+
+  // --- Kontaktformulär: förhindra riktig submit (som e.preventDefault() + console.log) ---
+  const contactForm = document.getElementById('contact-form');
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(contactForm).entries());
+    console.log(data);
+    // TODO: koppla till er endpoint/API
+  });
+
+  // --- Newsletter-box i sidfoten (bytte text till "Tack!" och rensade fältet) ---
+  const newsletterForm = document.getElementById('newsletter-form');
+  const newsletterInput = document.getElementById('newsletter-input');
+  const newsletterBtnText = document.getElementById('newsletter-btn-text');
+  const newsletterArrow = document.getElementById('newsletter-arrow');
+
+  newsletterForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!newsletterInput.value) return;
+
+    // TODO: koppla till er nyhetsbrevstjänst/API
+    newsletterBtnText.textContent = 'Tack!';
+    newsletterArrow.classList.add('hidden');
+    newsletterInput.value = '';
+
+    setTimeout(() => {
+      newsletterBtnText.textContent = 'Prenumerera';
+      newsletterArrow.classList.remove('hidden');
+    }, 3500);
+  });
+
+  // --- "Följ vår resa"-kortets länk: scrolla till nyhetsbrevet och fokusera fältet ---
+  document.getElementById('newsletter-jump').addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = document.getElementById('newsletter');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        document.getElementById('newsletter-input')?.focus();
+      }, 500);
+    }
+  });
+</script>
 
 </body>
-
 </html>
