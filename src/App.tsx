@@ -2,7 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import ContactHero from "./pages/ContactUsPage";
 import Navbar from "./pages/partial/Navbar";
 import AboutUsPage from "./pages/AboutUsPage";
+import ProductsPage from "./pages/ProductsPage";
 import PresentPage from "./pages/PresentPage";
+
 
 function App() {
   return (
@@ -12,7 +14,10 @@ function App() {
       <Routes>
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactHero />} />
+          <Route path="/products-page" element={<ProductsPage />} />
+
         <Route path="/presents" element={<PresentPage />} />
+
       </Routes>
     </>
   );
