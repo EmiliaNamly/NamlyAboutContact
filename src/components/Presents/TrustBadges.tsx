@@ -36,7 +36,7 @@ export default function TrustBadges() {
                             3-5 dagars frakt
                         </span>
                         <span className="text-[9px] md:text-[12px] text-[#475569] mt-0.5">
-                            Klimatkompenserat
+                            Fri frakt över 349kr
                         </span>
                     </div>
                 </div>
