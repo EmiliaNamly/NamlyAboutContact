@@ -45,10 +45,10 @@ export default function GiftCardSection() {
                                 setSelected(a);
                                 setUseCustom(false);
                             }}
-                            className={`py-3 rounded-xl bg-white border border-[#1E3A5F]/20 text-[15px] font-bold transition
+                            className={`py-3 rounded-xl border border-[#1E3A5F]/20 text-[15px] font-bold transition
                 ${selected === a && !useCustom
                                     ? "bg-black text-white "
-                                    : "hover:bg-[#1E3A5F] text-[#1f2933] hover:text-white"
+                                    : "bg-white hover:bg-[#1E3A5F] text-[#1f2933] hover:text-white"
                                 }`}
                         >
                             {a} kr
@@ -61,7 +61,7 @@ export default function GiftCardSection() {
                     className={`w-full py-3 rounded-xl border border-[#1E3A5F]/20 text-[15px] font-bold transition mb-4
             ${useCustom
                             ? "bg-black text-white "
-                            : "hover:bg-[#1E3A5F] text-[#1f2933] hover:text-white"
+                            : "bg-white hover:bg-[#1E3A5F] text-[#1f2933] hover:text-white"
                         }`}
                 >
                     Eget belopp
