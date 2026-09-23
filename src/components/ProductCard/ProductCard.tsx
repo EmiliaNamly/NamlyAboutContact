@@ -1,4 +1,4 @@
-import { HeartIcon, PencilIcon } from "@heroicons/react/24/outline";
+import { HeartIcon, PencilIcon, CheckIcon } from "@heroicons/react/24/outline";
 import {
   HeartIcon as HeartIconSolid,
   StarIcon,
@@ -20,6 +20,8 @@ export interface ProductCardProps {
   delivery: string;
   badge?: ProductBadge;
   favorited?: boolean;
+  trustLabel?: string;
+  sizeInfo?: string;
   onToggleFavorite?: () => void;
   onCustomize?: () => void;
 }
@@ -35,11 +37,13 @@ export default function ProductCard({
   delivery,
   badge,
   favorited = false,
+  trustLabel,
+  sizeInfo,
   onToggleFavorite,
   onCustomize,
 }: ProductCardProps) {
   return (
-    <div className="w-full max-w-[320px] rounded-2xl border border-slate-200 bg-white overflow-hidden">
+    <div className="w-full max-w-[320px] h-full flex flex-col rounded-2xl border border-slate-200 bg-white overflow-hidden">
       <div className="relative aspect-[4/3]">
         <img src={image} alt={title} className="h-full w-full object-cover" />
 
@@ -67,35 +71,50 @@ export default function ProductCard({
       </div>
 
       {/* Info */}
-      <div className="space-y-2 p-4">
-        <h3 className="text-sm font-medium leading-snug text-slate-900">
+      <div className="flex flex-1 flex-col space-y-2 p-4">
+        <h3 className="min-h-[2.5rem] line-clamp-2 text-sm font-medium leading-snug text-slate-900">
           {title}
         </h3>
 
-        <div className="flex items-baseline gap-2">
-          <span className="text-xs text-slate-500">Från</span>
-          <span
-            className={`text-lg font-bold ${
-              oldPrice ? "text-red-600" : "text-slate-900"
-            }`}
-          >
-            {price},00 kr
-          </span>
-          {oldPrice && (
-            <span className="text-sm text-slate-400 line-through">
-              {oldPrice},00 kr
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-baseline gap-2">
+            <span className="text-xs text-slate-500">Fr</span>
+            <span
+              className={`text-lg font-bold ${
+                oldPrice ? "text-red-600" : "text-slate-900"
+              }`}
+            >
+              {price},00 kr
+            </span>
+            {oldPrice && (
+              <span className="text-sm text-slate-400 line-through">
+                {oldPrice},00 kr
+              </span>
+            )}
+          </div>
+
+          {sizeInfo && (
+            <span className="whitespace-nowrap rounded-md bg-slate-100 px-2 py-1 text-xs font-medium text-slate-600">
+              {sizeInfo}
             </span>
           )}
         </div>
-
         <div className="flex items-center gap-1 text-sm">
-          <StarIcon className="h-3.5 w-3.5 text-amber-400" />
-          {satisfiedCustomers ? (
-            <span className="font-medium text-slate-900">
-              {satisfiedCustomers}+ nöjda kunder
-            </span>
+          {trustLabel ? (
+            <>
+              <CheckIcon className="h-3.5 w-3.5 text-black-600" />
+              <span className="font-medium text-black-700">{trustLabel}</span>
+            </>
+          ) : satisfiedCustomers ? (
+            <>
+              <StarIcon className="h-3.5 w-3.5 text-amber-400" />
+              <span className="font-medium text-slate-900">
+                {satisfiedCustomers}+ nöjda kunder
+              </span>
+            </>
           ) : (
             <>
+              <StarIcon className="h-3.5 w-3.5 text-amber-400" />
               <span className="font-medium text-slate-900">{rating}</span>
               <span className="text-slate-500">({reviews} omdömen)</span>
             </>
@@ -109,7 +128,7 @@ export default function ProductCard({
 
         <button
           onClick={onCustomize}
-          className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
+          className="mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800"
         >
           <PencilIcon className="h-3.5 w-3.5" />
           ANPASSA

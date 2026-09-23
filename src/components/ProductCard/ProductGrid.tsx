@@ -1,7 +1,6 @@
 import type { ProductCardProps } from "./ProductCard";
 import ProductsCard from "./ProductCard";
 
-
 type Product = ProductCardProps & { id: number };
 
 const products: Product[] = [
@@ -35,11 +34,19 @@ const products: Product[] = [
     delivery: "3–5 dagar",
     badge: { type: "popular", label: "POPULÄR JUST NU" },
   },
+  {
+    id: 4,
+    image: "https://www.namly.se/media/catalog/product/cache/7dc57066311f5a329f606bebc4c29857/w/p/wpprublwodss2150814535_006.jpg",
+    title: "Tapet - Blommig Elegans",
+    price: 249,
+    trustLabel: "Testad kvalitet",
+    delivery: "4–6 dagar",
+  },
 ];
 
 export default function ProductGrid() {
   return (
-    <div className="grid grid-cols-1 gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
       {products.map(({ id, ...cardProps }) => (
         <ProductsCard
           key={id}
