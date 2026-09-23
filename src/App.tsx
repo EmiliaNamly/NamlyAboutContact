@@ -4,6 +4,7 @@ import Navbar from "./pages/partial/Navbar";
 import AboutUsPage from "./pages/AboutUsPage";
 import ProductsPage from "./pages/ProductsPage";
 import PresentPage from "./pages/PresentPage";
+import SalePage from "./pages/SalePage";
 
 
 function App() {
@@ -14,8 +15,8 @@ function App() {
       <Routes>
         <Route path="/about-us" element={<AboutUsPage />} />
         <Route path="/contact" element={<ContactHero />} />
-          <Route path="/products-page" element={<ProductsPage />} />
-
+        <Route path="/products-page" element={<ProductsPage />} />
+        <Route path="/sale-page" element={<SalePage />} />
         <Route path="/presents" element={<PresentPage />} />
 
       </Routes>

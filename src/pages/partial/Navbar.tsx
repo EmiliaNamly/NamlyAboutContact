@@ -14,6 +14,7 @@ export default function Navbar() {
         <Link to="/contact">Kontakt</Link>
         <Link to="/products-page">Produkter</Link>
         <Link to="/presents">Presentsida</Link>
+        <Link to="/sale-page">Erbjudanden</Link>
 
       </div>
 
